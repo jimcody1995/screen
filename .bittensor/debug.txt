@@ -1,0 +1,386 @@
+BTCLI 9.17.0
+Async-Substrate-Interface: 1.6.4
+Bittensor-Wallet: 4.0.1
+Command: /root/llm-detection/.venv/bin/btcli wallet transfer --amount 0.0737 --dest 5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+Config: {'wallet_name': None, 'wallet_path': None, 'wallet_hotkey': None, 'network': None, 'use_cache': True, 'disk_cache': False, 'rate_tolerance': None, 'safe_staking': True, 'allow_partial_stake': False, 'dashboard_path': None}
+Python: 3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]
+System: linux
+
+2026-04-10 18:02:40,696 - DEBUG - btcli - cli:2479 - Using wallet Wallet (Name: 'giantdragon9090', Hotkey: 'default', Path: '/root/.bittensor/wallets/')
+2026-04-10 18:02:40,701 - DEBUG - btcli - cli:2743 - args:
+destination: 5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe
+amount: 0.0737
+transfer_all: False
+allow_death: False
+period: 16
+prompt: True
+
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:846 - Websocket connecting to wss://entrypoint-finney.opentensor.ai:443
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:851 - self.state=3
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:861 - Attempting cancellation
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:780 - Cancelling send/recv tasks
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:794 - Closing websocket connection
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:866 - Attempting connection
+2026-04-10 18:02:40,701 - DEBUG - async_substrate_interface - async_substrate:824 - Resolving DNS for entrypoint-finney.opentensor.ai:443
+2026-04-10 18:02:40,706 - DEBUG - async_substrate_interface - async_substrate:830 - DNS resolved entrypoint-finney.opentensor.ai -> 5.161.39.169
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:887 - Connection established
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID Pk1: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:908 - WS handler attached
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1076 - Starting receiving task
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1114 - Starting sending task
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:41,068 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:41,187 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Pk1 from inflight
+2026-04-10 18:02:41,191 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Pk1:
+{'jsonrpc': '2.0', 'id': 'Pk1', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:41,199 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID YC2: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader6304 with websocket ID ne3: {'id': 'chain_getHeader6304', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29']}}
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,200 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:41,201 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:41,319 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped YC2 from inflight
+2026-04-10 18:02:41,319 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped ne3 from inflight
+2026-04-10 18:02:41,320 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID YC2:
+{'jsonrpc': '2.0', 'id': 'YC2', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID ne3:
+{'jsonrpc': '2.0', 'id': 'ne3', 'result': {'parentHash': '0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8', 'number': '0x7921c2', 'stateRoot': '0xecaabbe8832e07825612fedf319a62a38080f68784771d122a36b042cb87acef', 'extrinsicsRoot': '0x065d47a8c83aa1cb5ddd70d1643fbf15b767eab1ae221565d5b21283cdf95bc2', 'digest': {'logs': ['0x066175726120c116d20800000000', '0x0466726f6e09020109fd38f3215d524d1b7597b56845511b2008c2776192be9d47407da0ad9e2b0e0ce60323225befeaf8eff6fa7415f0c1bd768d6afa9a443473f2523e1504e9d1444c263528cf4322ba2b45a30057a32cf552629d800fe6301a111506f6dac252aef968b3e678aa02870af95dff6ee20c97d47de19ad34bf27c95a56c63ed9d6b56', '0x0561757261010166028e78f0260341397ba23a529f524c9f10051e05c8b9f3cf47ac645d1a0c449b8c21614f6fa3f05857029c6f95aa50d6bb158b59cea9fa981422e35e7cdc8d']}}}
+Complete: True
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getRuntimeVersion263 with websocket ID to4: {'id': 'state_getRuntimeVersion263', 'payload': {'jsonrpc': '2.0', 'method': 'state_getRuntimeVersion', 'params': ['0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8']}}
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID wF5: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:02:41,321 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,322 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,322 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:41,322 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:41,440 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped to4 from inflight
+2026-04-10 18:02:41,440 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped wF5 from inflight
+2026-04-10 18:02:41,444 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID to4:
+{'jsonrpc': '2.0', 'id': 'to4', 'result': {'specName': 'node-subtensor', 'implName': 'node-subtensor', 'authoringVersion': 1, 'specVersion': 393, 'implVersion': 1, 'apis': [['0xdf6acb689907609b', 5], ['0x37e397fc7c91f5e4', 2], ['0x40fe3ad401f8959a', 6], ['0xfbc577b9d747efd6', 1], ['0xd2bc9897eed08f15', 3], ['0xf78b278be53f454c', 2], ['0xdd718d5cc53262d4', 1], ['0xab3c0572291feb8b', 1], ['0xed99c5acb25eedf5', 3], ['0xbc9d89904f5b923f', 1], ['0x37c8bb1350a9a2a8', 4], ['0xf3ff14d5ab527059', 3], ['0x582211f65bb14b89', 6], ['0xe65b00e46cedd0aa', 2], ['0x68b66ba122c93fa7', 2], ['0x42e62be4a39e5b60', 1], ['0x806df4ccaa9ed485', 1], ['0x8375104b299b74c5', 1], ['0x5d1fbfbe852f2807', 1], ['0xc6886e2f8e598b0a', 1], ['0xcbca25e39f142387', 2], ['0xa8b093e6508d9e9c', 1], ['0x1c4585bd5c707202', 1]], 'transactionVersion': 1, 'systemVersion': 1, 'stateVersion': 1}}
+Complete: True
+2026-04-10 18:02:41,470 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID wF5:
+{'jsonrpc': '2.0', 'id': 'wF5', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:41,470 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader6236 with websocket ID VI6: {'id': 'chain_getHeader6236', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29']}}
+2026-04-10 18:02:41,471 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,471 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,471 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:41,471 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:41,589 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped VI6 from inflight
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID VI6:
+{'jsonrpc': '2.0', 'id': 'VI6', 'result': {'parentHash': '0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8', 'number': '0x7921c2', 'stateRoot': '0xecaabbe8832e07825612fedf319a62a38080f68784771d122a36b042cb87acef', 'extrinsicsRoot': '0x065d47a8c83aa1cb5ddd70d1643fbf15b767eab1ae221565d5b21283cdf95bc2', 'digest': {'logs': ['0x066175726120c116d20800000000', '0x0466726f6e09020109fd38f3215d524d1b7597b56845511b2008c2776192be9d47407da0ad9e2b0e0ce60323225befeaf8eff6fa7415f0c1bd768d6afa9a443473f2523e1504e9d1444c263528cf4322ba2b45a30057a32cf552629d800fe6301a111506f6dac252aef968b3e678aa02870af95dff6ee20c97d47de19ad34bf27c95a56c63ed9d6b56', '0x0561757261010166028e78f0260341397ba23a529f524c9f10051e05c8b9f3cf47ac645d1a0c449b8c21614f6fa3f05857029c6f95aa50d6bb158b59cea9fa981422e35e7cdc8d']}}}
+Complete: True
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getMetadata4668 with websocket ID rl7: {'id': 'state_getMetadata4668', 'payload': {'jsonrpc': '2.0', 'method': 'state_getMetadata', 'params': ['0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8']}}
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_call1982 with websocket ID op8: {'id': 'state_call1982', 'payload': {'jsonrpc': '2.0', 'method': 'state_call', 'params': ['Metadata_metadata_at_version', '0x0f000000', '0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8']}}
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:41,593 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:42,306 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped rl7 from inflight
+2026-04-10 18:02:42,308 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID rl7:
+{'jsonrpc': '2.0', 'id': 'rl7', 'result': '0x6d6574610ec908000c1c73705f636f72651863727970746f2c4163636f756e7449643332000004000401205b75383b2033325d0000040000032000000008000800000503000c08306672616d655f73797374656d2c4163636f756e74496e666f08144e6f6e636501102c4163636f756e74446174610114001401146e6f6e63651001144e6f6e6365000124636f6e73756d657273100120526566436f756e7400012470726f766964657273100120526566436f756e7400012c73756666696369656e7473100120526566436f756e740001106461746114012c4163636f756e74446174610000100000050500140c3c70616c6c65745f62616c616e6365731474797065732c4163636f756e7444617461041c42616c616e63650118001001106672656518011c42616c616e6365000120726573657276656418011c42616c616e636500011866726f7a656e18011c42616c616e6365000114666c6167731c01284578747261466c61677300001800000506001c0c3c70616c6c65745f62616c616e636573147479706573284578747261466c61677300000400200110753132380000200000050700240000050000280c346672616d655f737570706f7274206469737061746368405065724469737061746368436c617373040454012c000c01186e6f726d616c2c01045400012c6f7065726174696f6e616c2c0104540001246d616e6461746f72792c01045400002c0c2873705f77656967687473247765696768745f76321857656967687400000801207265665f74696d6530010c75363400012870726f6f665f73697a6530010c753634000030000006180034083c7072696d69746976655f74797065731048323536000004000401205b75383b2033325d00003800000208003c102873705f72756e74696d651c67656e65726963186469676573741844696765737400000401106c6f677340013c5665633c4469676573744974656d3e000040000002440044102873705f72756e74696d651c67656e6572696318646967657374284469676573744974656d0001142850726552756e74696d650800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e00060024436f6e73656e7375730800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e000400105365616c0800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e000500144f74686572040038011c5665633c75383e0000006452756e74696d65456e7669726f6e6d656e745570646174656400080000480000030400000008004c00000250005008306672616d655f7379737 (truncated)
+Complete: True
+2026-04-10 18:02:43,070 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped op8 from inflight
+2026-04-10 18:02:43,082 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID op8:
+{'jsonrpc': '2.0', 'id': 'op8', 'result': '0x01320213006d6574610f5d0b000c1c73705f636f72651863727970746f2c4163636f756e7449643332000004000401205b75383b2033325d0000040000032000000008000800000503000c08306672616d655f73797374656d2c4163636f756e74496e666f08144e6f6e636501102c4163636f756e74446174610114001401146e6f6e63651001144e6f6e6365000124636f6e73756d657273100120526566436f756e7400012470726f766964657273100120526566436f756e7400012c73756666696369656e7473100120526566436f756e740001106461746114012c4163636f756e74446174610000100000050500140c3c70616c6c65745f62616c616e6365731474797065732c4163636f756e7444617461041c42616c616e63650118001001106672656518011c42616c616e6365000120726573657276656418011c42616c616e636500011866726f7a656e18011c42616c616e6365000114666c6167731c01284578747261466c61677300001800000506001c0c3c70616c6c65745f62616c616e636573147479706573284578747261466c61677300000400200110753132380000200000050700240000050000280c346672616d655f737570706f7274206469737061746368405065724469737061746368436c617373040454012c000c01186e6f726d616c2c01045400012c6f7065726174696f6e616c2c0104540001246d616e6461746f72792c01045400002c0c2873705f77656967687473247765696768745f76321857656967687400000801207265665f74696d6530010c75363400012870726f6f665f73697a6530010c753634000030000006180034083c7072696d69746976655f74797065731048323536000004000401205b75383b2033325d00003800000208003c102873705f72756e74696d651c67656e65726963186469676573741844696765737400000401106c6f677340013c5665633c4469676573744974656d3e000040000002440044102873705f72756e74696d651c67656e6572696318646967657374284469676573744974656d0001142850726552756e74696d650800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e00060024436f6e73656e7375730800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e000400105365616c0800480144436f6e73656e737573456e67696e654964000038011c5665633c75383e000500144f74686572040038011c5665633c75383e0000006452756e74696d65456e7669726f6e6d656e745570646174656400080000480000030400000008004c00000250005008306672616d6 (truncated)
+Complete: True
+2026-04-10 18:02:43,084 - DEBUG - async_substrate_interface - async_substrate:1677 - Retrieved metadata and metadata v15 for 393 from Substrate node
+2026-04-10 18:02:43,105 - DEBUG - async_substrate_interface - types:291 - Adding PortableRegistry from metadata to type registry
+2026-04-10 18:02:43,120 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID Rm9: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID ['5HancATtHCWrjpktg7bWiR2Y4D3jMSXBwUNPjGDG7TFwTKTB'] with websocket ID UH10: {'id': "['5HancATtHCWrjpktg7bWiR2Y4D3jMSXBwUNPjGDG7TFwTKTB']", 'payload': {'jsonrpc': '2.0', 'method': 'state_getStorageAt', 'params': ['0x26aa394eea5630e07c48ae0c9558cef7b99d880ec681799c0cf30e8886371da9fdd298efadbb146bb8a83f08d3ee42a4f41e84e014b97c145a42bff5c4310a29f9c8c405947d7465ea12b0b5aa1fd04f', '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29']}}
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID oC11: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 2
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,125 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:43,244 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Rm9 from inflight
+2026-04-10 18:02:43,244 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped oC11 from inflight
+2026-04-10 18:02:43,249 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Rm9:
+{'jsonrpc': '2.0', 'id': 'Rm9', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:43,453 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_methods2531 with websocket ID Ts12: {'id': 'rpc_methods2531', 'payload': {'jsonrpc': '2.0', 'method': 'rpc_methods', 'params': []}}
+2026-04-10 18:02:43,453 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID oC11:
+{'jsonrpc': '2.0', 'id': 'oC11', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:43,453 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,456 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,456 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,456 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped UH10 from inflight
+2026-04-10 18:02:43,466 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID UH10:
+{'nonce': 33, 'consumers': 0, 'providers': 1, 'sufficients': 0, 'data': {'free': 4872119613, 'reserved': 0, 'frozen': 0, 'flags': (170141183460469231731687303715884105728,)}}
+Complete: True
+2026-04-10 18:02:43,575 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Ts12 from inflight
+2026-04-10 18:02:43,579 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Ts12:
+{'jsonrpc': '2.0', 'id': 'Ts12', 'result': {'methods': ['account_nextIndex', 'author_hasKey', 'author_hasSessionKeys', 'author_insertKey', 'author_pendingExtrinsics', 'author_removeExtrinsic', 'author_rotateKeys', 'author_submitAndWatchExtrinsic', 'author_submitExtrinsic', 'author_unwatchExtrinsic', 'chainHead_v1_body', 'chainHead_v1_call', 'chainHead_v1_continue', 'chainHead_v1_follow', 'chainHead_v1_header', 'chainHead_v1_stopOperation', 'chainHead_v1_storage', 'chainHead_v1_unfollow', 'chainHead_v1_unpin', 'chainSpec_v1_chainName', 'chainSpec_v1_genesisHash', 'chainSpec_v1_properties', 'chain_getBlock', 'chain_getBlockHash', 'chain_getFinalisedHead', 'chain_getFinalizedHead', 'chain_getHead', 'chain_getHeader', 'chain_getRuntimeVersion', 'chain_subscribeAllHeads', 'chain_subscribeFinalisedHeads', 'chain_subscribeFinalizedHeads', 'chain_subscribeNewHead', 'chain_subscribeNewHeads', 'chain_subscribeRuntimeVersion', 'chain_unsubscribeAllHeads', 'chain_unsubscribeFinalisedHeads', 'chain_unsubscribeFinalizedHeads', 'chain_unsubscribeNewHead', 'chain_unsubscribeNewHeads', 'chain_unsubscribeRuntimeVersion', 'childstate_getKeys', 'childstate_getKeysPaged', 'childstate_getKeysPagedAt', 'childstate_getStorage', 'childstate_getStorageEntries', 'childstate_getStorageHash', 'childstate_getStorageSize', 'debug_getBadBlocks', 'debug_getRawBlock', 'debug_getRawHeader', 'debug_getRawReceipts', 'debug_getRawTransaction', 'delegateInfo_getDelegate', 'delegateInfo_getDelegated', 'delegateInfo_getDelegates', 'eth_accounts', 'eth_blockNumber', 'eth_call', 'eth_chainId', 'eth_coinbase', 'eth_estimateGas', 'eth_feeHistory', 'eth_gasPrice', 'eth_getBalance', 'eth_getBlockByHash', 'eth_getBlockByNumber', 'eth_getBlockReceipts', 'eth_getBlockTransactionCountByHash', 'eth_getBlockTransactionCountByNumber', 'eth_getCode', 'eth_getFilterChanges', 'eth_getFilterLogs', 'eth_getLogs', 'eth_getStorageAt', 'eth_getTransactionByBlockHashAndIndex', 'eth_getTransactionByBlockNumberAndIndex', 'eth_get (truncated)
+Complete: True
+2026-04-10 18:02:43,579 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID IP13: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:43,579 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,579 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,580 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,580 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:43,699 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped IP13 from inflight
+2026-04-10 18:02:43,703 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID IP13:
+{'jsonrpc': '2.0', 'id': 'IP13', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:43,708 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_call2480 with websocket ID Sg14: {'id': 'state_call2480', 'payload': {'jsonrpc': '2.0', 'method': 'state_call', 'params': ['AccountNonceApi_account_nonce', 'f41e84e014b97c145a42bff5c4310a29f9c8c405947d7465ea12b0b5aa1fd04f', None]}}
+2026-04-10 18:02:43,708 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,708 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,709 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,709 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:43,827 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Sg14 from inflight
+2026-04-10 18:02:43,830 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Sg14:
+{'jsonrpc': '2.0', 'id': 'Sg14', 'result': '0x21000000'}
+Complete: True
+2026-04-10 18:02:43,836 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID EZ15: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:43,836 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,836 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,836 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,836 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:43,954 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped EZ15 from inflight
+2026-04-10 18:02:43,959 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID EZ15:
+{'jsonrpc': '2.0', 'id': 'EZ15', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:43,965 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_call2771 with websocket ID LT16: {'id': 'state_call2771', 'payload': {'jsonrpc': '2.0', 'method': 'state_call', 'params': ['TransactionPaymentApi_query_info', '39028400f41e84e014b97c145a42bff5c4310a29f9c8c405947d7465ea12b0b5aa1fd04f010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000840000050300a69c2a35cc92068ca11818f190f771e3f3ba283c0bb091282dc9e83ed8bad00e824a921190000000', None]}}
+2026-04-10 18:02:43,965 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:43,965 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:43,965 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:43,965 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:44,085 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped LT16 from inflight
+2026-04-10 18:02:44,087 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID LT16:
+{'jsonrpc': '2.0', 'id': 'LT16', 'result': '0xe2e01c272538003714020000000000'}
+Complete: True
+2026-04-10 18:02:44,092 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID hE17: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:02:44,092 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:44,093 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:44,093 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:44,093 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:44,211 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped hE17 from inflight
+2026-04-10 18:02:44,214 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID hE17:
+{'jsonrpc': '2.0', 'id': 'hE17', 'result': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29'}
+Complete: True
+2026-04-10 18:02:44,216 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID ['5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe'] with websocket ID zL18: {'id': "['5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe']", 'payload': {'jsonrpc': '2.0', 'method': 'state_getStorageAt', 'params': ['0x658faa385070e074c85bf6b568cf0555eca6b7a1fdc9f689184ecb4f359c05187ec2bbc22d5d6094e95cbb9a49ebe9c7a69c2a35cc92068ca11818f190f771e3f3ba283c0bb091282dc9e83ed8bad00e', None]}}
+2026-04-10 18:02:44,216 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:02:44,216 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:02:44,216 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:02:44,216 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:02:44,334 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped zL18 from inflight
+2026-04-10 18:02:44,338 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID zL18:
+5C4hrfjw9DjXZTzV3MwzrrAr9P1MJhSrvWGWqi1eSuyUpnhM
+Complete: True
+2026-04-10 18:03:00,028 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID Ah19: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:03:00,028 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,029 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,029 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,029 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,147 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Ah19 from inflight
+2026-04-10 18:03:00,147 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Ah19:
+{'jsonrpc': '2.0', 'id': 'Ah19', 'result': '0x024f8e5abdd3f51ef251dd58f1437d0b9d282936fafbfd3d99261ac8d5fc3548'}
+Complete: True
+2026-04-10 18:03:00,148 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader3302 with websocket ID iv20: {'id': 'chain_getHeader3302', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0x024f8e5abdd3f51ef251dd58f1437d0b9d282936fafbfd3d99261ac8d5fc3548']}}
+2026-04-10 18:03:00,148 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,148 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,148 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,148 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,267 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped iv20 from inflight
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID iv20:
+{'jsonrpc': '2.0', 'id': 'iv20', 'result': {'parentHash': '0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29', 'number': '0x7921c3', 'stateRoot': '0x18de18f17698abbf01d33d2a5fcd9a1877c627541b69337bedf1b1c4f87077e4', 'extrinsicsRoot': '0x60eca9d1ac131d2693b9332910675700ab4ca08cda927f3d0204a9ad24ddf03a', 'digest': {'logs': ['0x066175726120c216d20800000000', '0x0466726f6e09020111b7f3c434aa9419208e896cf39a0162566b1aded2d4d5a16ea1689d01908a720cd445e6436ba92505c4ae4f0c7a1d86aa56ea6464714e74bdf21b97d01b8ab3d960dbbee51a98ea802761fad6be59cb7739bc52f8a0efd8fffcc20cd6a0b55c18f580ad330c0d369064292c75b2b7909f1b047a4a227b238a880e6fc858f61ded', '0x0561757261010142296cbe3d1f6686bfbd3382a237c410dc9c5a1cd7befde6098e37d5149199104e649688f46fef2b86df60f3e7b53d7e5fe092022914f31aaee9cae46d116380']}}}
+Complete: True
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getRuntimeVersion1900 with websocket ID AE21: {'id': 'state_getRuntimeVersion1900', 'payload': {'jsonrpc': '2.0', 'method': 'state_getRuntimeVersion', 'params': ['0xf7e34f2247813b4aaf6d7234bc8745a4bb947f188c71c7b9c29c8b7c220b1b29']}}
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,271 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,389 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped AE21 from inflight
+2026-04-10 18:03:00,394 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID AE21:
+{'jsonrpc': '2.0', 'id': 'AE21', 'result': {'specName': 'node-subtensor', 'implName': 'node-subtensor', 'authoringVersion': 1, 'specVersion': 393, 'implVersion': 1, 'apis': [['0xdf6acb689907609b', 5], ['0x37e397fc7c91f5e4', 2], ['0x40fe3ad401f8959a', 6], ['0xfbc577b9d747efd6', 1], ['0xd2bc9897eed08f15', 3], ['0xf78b278be53f454c', 2], ['0xdd718d5cc53262d4', 1], ['0xab3c0572291feb8b', 1], ['0xed99c5acb25eedf5', 3], ['0xbc9d89904f5b923f', 1], ['0x37c8bb1350a9a2a8', 4], ['0xf3ff14d5ab527059', 3], ['0x582211f65bb14b89', 6], ['0xe65b00e46cedd0aa', 2], ['0x68b66ba122c93fa7', 2], ['0x42e62be4a39e5b60', 1], ['0x806df4ccaa9ed485', 1], ['0x8375104b299b74c5', 1], ['0x5d1fbfbe852f2807', 1], ['0xc6886e2f8e598b0a', 1], ['0xcbca25e39f142387', 2], ['0xa8b093e6508d9e9c', 1], ['0x1c4585bd5c707202', 1]], 'transactionVersion': 1, 'systemVersion': 1, 'stateVersion': 1}}
+Complete: True
+2026-04-10 18:03:00,395 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_methods6967 with websocket ID OW22: {'id': 'rpc_methods6967', 'payload': {'jsonrpc': '2.0', 'method': 'rpc_methods', 'params': []}}
+2026-04-10 18:03:00,395 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,395 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,395 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,395 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,515 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped OW22 from inflight
+2026-04-10 18:03:00,518 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID OW22:
+{'jsonrpc': '2.0', 'id': 'OW22', 'result': {'methods': ['account_nextIndex', 'author_hasKey', 'author_hasSessionKeys', 'author_insertKey', 'author_pendingExtrinsics', 'author_removeExtrinsic', 'author_rotateKeys', 'author_submitAndWatchExtrinsic', 'author_submitExtrinsic', 'author_unwatchExtrinsic', 'chainHead_v1_body', 'chainHead_v1_call', 'chainHead_v1_continue', 'chainHead_v1_follow', 'chainHead_v1_header', 'chainHead_v1_stopOperation', 'chainHead_v1_storage', 'chainHead_v1_unfollow', 'chainHead_v1_unpin', 'chainSpec_v1_chainName', 'chainSpec_v1_genesisHash', 'chainSpec_v1_properties', 'chain_getBlock', 'chain_getBlockHash', 'chain_getFinalisedHead', 'chain_getFinalizedHead', 'chain_getHead', 'chain_getHeader', 'chain_getRuntimeVersion', 'chain_subscribeAllHeads', 'chain_subscribeFinalisedHeads', 'chain_subscribeFinalizedHeads', 'chain_subscribeNewHead', 'chain_subscribeNewHeads', 'chain_subscribeRuntimeVersion', 'chain_unsubscribeAllHeads', 'chain_unsubscribeFinalisedHeads', 'chain_unsubscribeFinalizedHeads', 'chain_unsubscribeNewHead', 'chain_unsubscribeNewHeads', 'chain_unsubscribeRuntimeVersion', 'childstate_getKeys', 'childstate_getKeysPaged', 'childstate_getKeysPagedAt', 'childstate_getStorage', 'childstate_getStorageEntries', 'childstate_getStorageHash', 'childstate_getStorageSize', 'debug_getBadBlocks', 'debug_getRawBlock', 'debug_getRawHeader', 'debug_getRawReceipts', 'debug_getRawTransaction', 'delegateInfo_getDelegate', 'delegateInfo_getDelegated', 'delegateInfo_getDelegates', 'eth_accounts', 'eth_blockNumber', 'eth_call', 'eth_chainId', 'eth_coinbase', 'eth_estimateGas', 'eth_feeHistory', 'eth_gasPrice', 'eth_getBalance', 'eth_getBlockByHash', 'eth_getBlockByNumber', 'eth_getBlockReceipts', 'eth_getBlockTransactionCountByHash', 'eth_getBlockTransactionCountByNumber', 'eth_getCode', 'eth_getFilterChanges', 'eth_getFilterLogs', 'eth_getLogs', 'eth_getStorageAt', 'eth_getTransactionByBlockHashAndIndex', 'eth_getTransactionByBlockNumberAndIndex', 'eth_get (truncated)
+Complete: True
+2026-04-10 18:03:00,519 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID account_nextIndex6270 with websocket ID Ee23: {'id': 'account_nextIndex6270', 'payload': {'jsonrpc': '2.0', 'method': 'account_nextIndex', 'params': ['5HancATtHCWrjpktg7bWiR2Y4D3jMSXBwUNPjGDG7TFwTKTB']}}
+2026-04-10 18:03:00,520 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,520 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,520 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,521 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,646 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Ee23 from inflight
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Ee23:
+{'jsonrpc': '2.0', 'id': 'Ee23', 'result': 33}
+Complete: True
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID HK24: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,654 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,773 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped HK24 from inflight
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID HK24:
+{'jsonrpc': '2.0', 'id': 'HK24', 'result': '0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2'}
+Complete: True
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader2708 with websocket ID QI25: {'id': 'chain_getHeader2708', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2']}}
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,777 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:00,896 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped QI25 from inflight
+2026-04-10 18:03:00,900 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID QI25:
+{'jsonrpc': '2.0', 'id': 'QI25', 'result': {'parentHash': '0x024f8e5abdd3f51ef251dd58f1437d0b9d282936fafbfd3d99261ac8d5fc3548', 'number': '0x7921c4', 'stateRoot': '0x9ce3205039c0fc3953da6beac065661dd904e26434d1edca1f805070f2255ef1', 'extrinsicsRoot': '0x7a727df3c33501f31c6add4819578990be96da471d6c277e9035d7607ef8f6cd', 'digest': {'logs': ['0x066175726120c316d20800000000', '0x0466726f6e0902016f646b225ee5c089fd5fd7d634f72ad5cbdaf56e68d81d60e1bf2c24fd8a95280cfaa3d5962e1b7874bef64e5798e867eb4be48b913d74f7b24c278ada34c0e66f05cc72f36bcf5c7b9a3240a7d55ee6777576ca9bdc095b2c0294918430ba2c809097a452e79308145fcbbb7c4069ae061b8f89ae0008f6ea9861b6bf82fec95a', '0x056175726101015a5e7231fecd3cca98663b61477c6590ff9291838a3c3f3d58223d5893c5fc6ff3152cf98a5c05fd3226eb8e9ac8e4455690e7bb0b75924b30eeed08bcdff78f']}}}
+Complete: True
+2026-04-10 18:03:00,901 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getRuntimeVersion6785 with websocket ID AO26: {'id': 'state_getRuntimeVersion6785', 'payload': {'jsonrpc': '2.0', 'method': 'state_getRuntimeVersion', 'params': ['0x024f8e5abdd3f51ef251dd58f1437d0b9d282936fafbfd3d99261ac8d5fc3548']}}
+2026-04-10 18:03:00,901 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:00,901 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:00,901 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:00,901 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:01,019 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped AO26 from inflight
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID AO26:
+{'jsonrpc': '2.0', 'id': 'AO26', 'result': {'specName': 'node-subtensor', 'implName': 'node-subtensor', 'authoringVersion': 1, 'specVersion': 393, 'implVersion': 1, 'apis': [['0xdf6acb689907609b', 5], ['0x37e397fc7c91f5e4', 2], ['0x40fe3ad401f8959a', 6], ['0xfbc577b9d747efd6', 1], ['0xd2bc9897eed08f15', 3], ['0xf78b278be53f454c', 2], ['0xdd718d5cc53262d4', 1], ['0xab3c0572291feb8b', 1], ['0xed99c5acb25eedf5', 3], ['0xbc9d89904f5b923f', 1], ['0x37c8bb1350a9a2a8', 4], ['0xf3ff14d5ab527059', 3], ['0x582211f65bb14b89', 6], ['0xe65b00e46cedd0aa', 2], ['0x68b66ba122c93fa7', 2], ['0x42e62be4a39e5b60', 1], ['0x806df4ccaa9ed485', 1], ['0x8375104b299b74c5', 1], ['0x5d1fbfbe852f2807', 1], ['0xc6886e2f8e598b0a', 1], ['0xcbca25e39f142387', 2], ['0xa8b093e6508d9e9c', 1], ['0x1c4585bd5c707202', 1]], 'transactionVersion': 1, 'systemVersion': 1, 'stateVersion': 1}}
+Complete: True
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getFinalizedHead5097 with websocket ID sa27: {'id': 'chain_getFinalizedHead5097', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getFinalizedHead', 'params': []}}
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:01,024 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:01,143 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped sa27 from inflight
+2026-04-10 18:03:01,148 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID sa27:
+{'jsonrpc': '2.0', 'id': 'sa27', 'result': '0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8'}
+Complete: True
+2026-04-10 18:03:01,148 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader5733 with websocket ID Mi28: {'id': 'chain_getHeader5733', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0x258821f619bb9be2989aaf673cb2e9a2fd56cf23b14981eea1a1cf1a01dbb6e8']}}
+2026-04-10 18:03:01,148 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:01,149 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:01,149 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:01,149 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:01,267 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Mi28 from inflight
+2026-04-10 18:03:01,272 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Mi28:
+{'jsonrpc': '2.0', 'id': 'Mi28', 'result': {'parentHash': '0xb83d9b7bea4912c51f32ef20bf162919d3ddeabad1dd01364105a3ed958a51bb', 'number': '0x7921c1', 'stateRoot': '0x56f38158d6de9eeecece4be47330c38c37db2688d2b8cdb2ba2d412e6555f957', 'extrinsicsRoot': '0x4021cb1097e2c2a006bee97ebd8460bad7aeeeaf2f5f76cda9c35198097e6ffe', 'digest': {'logs': ['0x066175726120c016d20800000000', '0x0466726f6e090201ac1a6764382f7aea13a51bf06f54c5787403a197e2f5135f97f79520bac8cb220c65045ad91e25c6283e0d5622c847f57a74383d5ddd875173ffb83f98bbe4d93367b9ff23517bcebe255f0e7d0d47a86a65abe71ba26dad0ac6e2019097180709a4b51464c928ecf87e6967cf30f6ae5f18991da125ccb47e3648c5c699b48bbb', '0x05617572610101806795bc5496e83274f29cf417af23785e5a3f26e8e3f99328ff922994d526437ac0e3a99cec6e48fee6e496d65466ea5df18d0da3e43d383deb2e23a79fdb81']}}}
+Complete: True
+2026-04-10 18:03:01,273 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getBlockHash2978 with websocket ID DN29: {'id': 'chain_getBlockHash2978', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getBlockHash', 'params': [0]}}
+2026-04-10 18:03:01,273 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:01,273 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:01,273 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:01,273 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:01,392 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped DN29 from inflight
+2026-04-10 18:03:01,397 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID DN29:
+{'jsonrpc': '2.0', 'id': 'DN29', 'result': '0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03'}
+Complete: True
+2026-04-10 18:03:01,398 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID gI30: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'author_submitAndWatchExtrinsic', 'params': ['0x3d028400f41e84e014b97c145a42bff5c4310a29f9c8c405947d7465ea12b0b5aa1fd04f0130daf40313a1340d8adad7553a5cc47f7b75c686a055d8ecd306c8b5b1dc72261a779440e66e0eccc9840405c7040db52633baad10dc2fe862849863fd15638c1300840000050300a69c2a35cc92068ca11818f190f771e3f3ba283c0bb091282dc9e83ed8bad00e824a9211']}}
+2026-04-10 18:03:01,398 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:01,398 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:01,398 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:01,398 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:01,517 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped gI30 from inflight
+2026-04-10 18:03:01,521 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID 0xccf5c59aaf3618a2b74ac5d51481230f:
+{'jsonrpc': '2.0', 'id': 'gI30', 'result': '0xccf5c59aaf3618a2b74ac5d51481230f'}
+Complete: False
+2026-04-10 18:03:01,531 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID 0xccf5c59aaf3618a2b74ac5d51481230f:
+{'jsonrpc': '2.0', 'method': 'author_extrinsicUpdate', 'params': {'subscription': '0xccf5c59aaf3618a2b74ac5d51481230f', 'result': 'ready'}}
+Complete: False
+2026-04-10 18:03:01,541 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID 0xccf5c59aaf3618a2b74ac5d51481230f:
+{'jsonrpc': '2.0', 'method': 'author_extrinsicUpdate', 'params': {'subscription': '0xccf5c59aaf3618a2b74ac5d51481230f', 'result': {'broadcast': ['12D3KooWHiKbUBijNGLDg7zmNzEYNN9Ako68afJs7hnouvZfTUur', '12D3KooWAMiiV16oeHjuVde2U69FT627TyGERrtDREb5CnZP2Cj2', '12D3KooWGhqBzdYR229dSYBTMxSaqTu7y6uXmXWXqTu9YLNCyKSi', '12D3KooWQRpha6LwMgNaYf9T48TjnFbPn7tBmenFmrZdADQE76Cn', '12D3KooWK11pSJU9HSh9wgL2zyg8gd3wi7SVE2vzK2fsz9pAaAB8', '12D3KooWBJ64cdmMkHCyeYvhf3Nx27ezEdVVQYhC31PxByYfSgXV', '12D3KooWLbzy9X2abdwRFX7fsLuLkVLkCjptQYvPNPyr1mYnvTny', '12D3KooWJSo7SUQYjMNP4hwEmSMBxv8XrFtwHiRv4NwdCjyq2UQb', '12D3KooWDvf5ekHASQA3bRTkKYB6VUzxQ9rXPvxeojsMz12XEWrh', '12D3KooWJ15bj4iDWQyBiNDf15Z21uKStBLuyuHQudGNNCXH14MV', '12D3KooWEG2QNgJrF4jxrinAaDpP8Ydq3jRBug9DKhqpDD3NvTVz', '12D3KooWQTCZiqGPrpmBqQheZKGV8QyUBJcNjwyUseHn7scvSYSW', '12D3KooWMZkxFKCShZX5Ww63aCy76xPxiU62ovw4YLpC7R9dsMji', '12D3KooWFgqwpyFfK8t7wrVzwiz1vK9jHVwJVWdXvsqiennWPYfG', '12D3KooWDvyVrYsrMQDpRGu4Kz7kW7in84yzsc71SxzenqqzLjp3', '12D3KooWCgo6MPWoTYk1qsNxanoW9WHf1q9UNk7KcdESpELPLH6Y', '12D3KooWS4zVJnYv1Fb5ZNEkpABamN4Wbe8AyHM9W3qmNMMc3TV7', '12D3KooWJDS1bS2LhiXYghTJWfjhXkYZPUPM1o5UPYoc1evzV3Vf', '12D3KooWC4T2BpDAqC5pjAMC3t5BEUYtCQvSV4iJ3K93JWMaoRMx', '12D3KooWR1qXMGtw7yozWTL8bM3DUYXy2gwXwSD4G6vUVmuHSeK7', '12D3KooWAJhPv746NZz7v7MLba6BnHKuNsFES1mC1NTFP3g6aUZq', '12D3KooWGA1kRzpD7DRLMsktMh6vijw3dfwgBSfHq5zeaWh4FtfE', '12D3KooWMBJNvxLtgGXbdJMtMqowf1X7SNBmxNKzz3Gt3M82YVBa', '12D3KooWRhDC2YJ6eGqTKubhuQANEHF2SuXjRbVaQuwZAFCziFyt', '12D3KooWFnjPy8TN1htqSqJ5451A9js3z7LLVDpyuz64b4sNrAdK', '12D3KooWEF2xHDRAd7ENMqHnXGA8vu4CLe9NVdWVjh2J7wCMZKJu', '12D3KooWSMPyp3kZVw9TffcWYNqFUapBy4SN2HmEqfVUZ7d4KFi2', '12D3KooWJSUrT1cWV8NMjEdD4GERgwWBjMKPFrxJNmdgG8eg4iGo', '12D3KooW9qoSL1nf5MjJST4wPR5BcfJJsogPayBW6UvhzN2EeQqu', '12D3KooWRLkLfF4qUDYVc83pYSrmiSQG8zn2KzGyhyDQ8Va2z4np', '12D3KooWLogTa7aEzJvJ1nsAXreQg2CqnhinyUCizS4Bz52b1i34', '12D3KooWGD3VoYwtrpC5ntBbPHnrCHxsqqpuj6cq1MprbE2fxxtk', '12D3KooWKmHY7CGj15vL7fmcuPuRQ7ZX6bsDbnqUW1Gg3kj9yqF7', '12D3Ko (truncated)
+Complete: False
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:4294 - Extrinsic included. Unsubscribing.
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:1197 - Unwatched extrinsic subscription 0xccf5c59aaf3618a2b74ac5d51481230f
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID 0xccf5c59aaf3618a2b74ac5d51481230f:
+{'block_hash': '0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12', 'extrinsic_hash': '0x99bed39281e6f6c966e8d505222306f4af9a3fb1dc8bc302026fd883034aa49e', 'finalized': False}
+Complete: True
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader576 with websocket ID pU32: {'id': 'chain_getHeader576', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12']}}
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 1
+2026-04-10 18:03:12,962 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:12,963 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:12,963 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:12,963 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,081 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped nC31 from inflight
+2026-04-10 18:03:13,081 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped pU32 from inflight
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID pU32:
+{'jsonrpc': '2.0', 'id': 'pU32', 'result': {'parentHash': '0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2', 'number': '0x7921c5', 'stateRoot': '0xe54f61878846a631a1182da618a40c700dfb7c5f2b403856b90617f05b9066d5', 'extrinsicsRoot': '0x9f6c1c83d5a2477e252937c95d59f8226392095fbeaa8aad85bbcd50aa921f3a', 'digest': {'logs': ['0x066175726120c416d20800000000', '0x0466726f6e89020121d51bbb47ae8608583f783a369d20dc7f37b1f7cc845bae1c5be1513ccdf8501076bbca3cf3c0ac89c85095d8c8b7a37b1651c8c9b618abeb83e489da8afd1fc87df5af65506f35bc8e1f8c84f9a27d448a1886591b494fa802428891916aafbecf19cce0faa4027b071b4bf27c3303ce54d9024935cae342228b5140905328658e3ba09cb4eb3b78d57a42ca435cf4341444586ad648bdc8b95e7ee000c4f8af', '0x05617572610101ee1c5f279736f7dc142451e6d5bd24e41ef091514bb00fc632c1495a716f662f7b31b6c02abb76591cc4a8dace6aa1384abde6d51555f308237d48ee533b698f']}}}
+Complete: True
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getRuntimeVersion5657 with websocket ID gY33: {'id': 'state_getRuntimeVersion5657', 'payload': {'jsonrpc': '2.0', 'method': 'state_getRuntimeVersion', 'params': ['0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2']}}
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,086 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,206 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped gY33 from inflight
+2026-04-10 18:03:13,216 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID gY33:
+{'jsonrpc': '2.0', 'id': 'gY33', 'result': {'specName': 'node-subtensor', 'implName': 'node-subtensor', 'authoringVersion': 1, 'specVersion': 393, 'implVersion': 1, 'apis': [['0xdf6acb689907609b', 5], ['0x37e397fc7c91f5e4', 2], ['0x40fe3ad401f8959a', 6], ['0xfbc577b9d747efd6', 1], ['0xd2bc9897eed08f15', 3], ['0xf78b278be53f454c', 2], ['0xdd718d5cc53262d4', 1], ['0xab3c0572291feb8b', 1], ['0xed99c5acb25eedf5', 3], ['0xbc9d89904f5b923f', 1], ['0x37c8bb1350a9a2a8', 4], ['0xf3ff14d5ab527059', 3], ['0x582211f65bb14b89', 6], ['0xe65b00e46cedd0aa', 2], ['0x68b66ba122c93fa7', 2], ['0x42e62be4a39e5b60', 1], ['0x806df4ccaa9ed485', 1], ['0x8375104b299b74c5', 1], ['0x5d1fbfbe852f2807', 1], ['0xc6886e2f8e598b0a', 1], ['0xcbca25e39f142387', 2], ['0xa8b093e6508d9e9c', 1], ['0x1c4585bd5c707202', 1]], 'transactionVersion': 1, 'systemVersion': 1, 'stateVersion': 1}}
+Complete: True
+2026-04-10 18:03:13,217 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getBlock306 with websocket ID ef34: {'id': 'chain_getBlock306', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getBlock', 'params': ['0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12']}}
+2026-04-10 18:03:13,217 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,217 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,217 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,217 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,454 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped ef34 from inflight
+2026-04-10 18:03:13,462 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID ef34:
+{'jsonrpc': '2.0', 'id': 'ef34', 'result': {'block': {'header': {'parentHash': '0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2', 'number': '0x7921c5', 'stateRoot': '0xe54f61878846a631a1182da618a40c700dfb7c5f2b403856b90617f05b9066d5', 'extrinsicsRoot': '0x9f6c1c83d5a2477e252937c95d59f8226392095fbeaa8aad85bbcd50aa921f3a', 'digest': {'logs': ['0x066175726120c416d20800000000', '0x0466726f6e89020121d51bbb47ae8608583f783a369d20dc7f37b1f7cc845bae1c5be1513ccdf8501076bbca3cf3c0ac89c85095d8c8b7a37b1651c8c9b618abeb83e489da8afd1fc87df5af65506f35bc8e1f8c84f9a27d448a1886591b494fa802428891916aafbecf19cce0faa4027b071b4bf27c3303ce54d9024935cae342228b5140905328658e3ba09cb4eb3b78d57a42ca435cf4341444586ad648bdc8b95e7ee000c4f8af', '0x05617572610101ee1c5f279736f7dc142451e6d5bd24e41ef091514bb00fc632c1495a716f662f7b31b6c02abb76591cc4a8dace6aa1384abde6d51555f308237d48ee533b698f']}}, 'extrinsics': ['0x280502000b8023eb779d01', '0x9912051e00018112be58b6586ba9ad3715d4d6205e29a18591a8bb9b4cb6c3a45cc6117c056d31fc32c69a2623f27d37bcb1c594362a930bfdfb1e6057296ea8026108c40693c5cc9ab4da7c5a4101cf14329a90f06ad69a8c584c4c1de688a2883513e47cf1b910421a890b9150c3052dbee17b18497a10a940ea6a00c05283fa4601f9299dde9b08660c2a5365a283d240190392699496faf802007c5f6cf44ad686c43d1acb8bb16c47904ef36171211c477f005b2969c40fb37c4ab48641101ccca63dece5755f5a842cb5c8abe702e7730289b0016f6342ff1b4f7af6ca5ce6af52d93f6ababcebcccd5a64576e0b54d8ec23856a367e0b81d948817fa980d4acb662773aa13303fb658fd7052425662b2952b23c6acc463566c593b697046b06ba3e4db520d97a2dbe480178500bd1d44e7c831cd02b39ae7b364e75ab815a636020898614027e00b3292b3643fa14e325aa7e7443407c208ba316e078cf27420eb93c349e918813c937e479455bdb28f2785ee3c2279be72fdcf8c817133b42ec3c392507ba47479a166d451b47163209bd9432fdd1334b5a88fbd75c5b2c39db0394732668c4159a910a45d3fbc370902ee550a26022562257a75dfa21f2f3c7816a5b1ed828c2569ed31927ebd89a1ee399c3fc4162986f1a7686d12243f91b83aa22b90c116e3588897a74952b756bf5a0777266060b09a699a4c84f645f03e3901d9cc9d5a85ad3241c1b31a8a4e (truncated)
+Complete: True
+2026-04-10 18:03:13,482 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID state_getStorageAt5176 with websocket ID Om35: {'id': 'state_getStorageAt5176', 'payload': {'jsonrpc': '2.0', 'method': 'state_getStorageAt', 'params': ['0x26aa394eea5630e07c48ae0c9558cef780d41e5e16056765bc8461851072c9d7', '0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12']}}
+2026-04-10 18:03:13,487 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,487 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,488 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,488 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,606 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Om35 from inflight
+2026-04-10 18:03:13,649 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Om35:
+[{'phase': 'Initialization', 'extrinsic_idx': None, 'event': {'event_index': '0770', 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5EbnQPtBHcUdyJUD3ci5a4jNk9MtZQfGKpHDtxaNwPDrHueo'}}, 'event_index': 7, 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5EbnQPtBHcUdyJUD3ci5a4jNk9MtZQfGKpHDtxaNwPDrHueo'}, 'topics': []}, {'phase': 'Initialization', 'extrinsic_idx': None, 'event': {'event_index': '0770', 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5HKHLFPigo9xKcSEVp6s8rmVwtbU6Yfp1mgGECKarDvqdmrP'}}, 'event_index': 7, 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5HKHLFPigo9xKcSEVp6s8rmVwtbU6Yfp1mgGECKarDvqdmrP'}, 'topics': []}, {'phase': 'Initialization', 'extrinsic_idx': None, 'event': {'event_index': '0770', 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5Da6NDMftcDTx3y1FF8tM9gR8mkYNjgyfCDPneEq6K7862WG'}}, 'event_index': 7, 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5Da6NDMftcDTx3y1FF8tM9gR8mkYNjgyfCDPneEq6K7862WG'}, 'topics': []}, {'phase': 'Initialization', 'extrinsic_idx': None, 'event': {'event_index': '0770', 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5FZLKjB1fautzbGXi3P94sngVm6Uyvr2n1EoM4MRXBRLMSsr'}}, 'event_index': 7, 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5FZLKjB1fautzbGXi3P94sngVm6Uyvr2n1EoM4MRXBRLMSsr'}, 'topics': []}, {'phase': 'Initialization', 'extrinsic_idx': None, 'event': {'event_index': '0770', 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5DKhNELWdK7GrFgoayhfgZXxZf7CbTiat7ZaK4LcWWNsmZhR'}}, 'event_index': 7, 'module_id': 'SubtensorModule', 'event_id': 'RootClaimed', 'attributes': {'coldkey': '5DKhNELWdK7GrFgoayhfgZXxZf7CbTiat7ZaK4LcWWNsmZhR'}, 'topics': []}, {'phase': 'ApplyExtrinsic', ' (truncated)
+Complete: True
+2026-04-10 18:03:13,653 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID rpc_request with websocket ID Bw36: {'id': 'rpc_request', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHead', 'params': []}}
+2026-04-10 18:03:13,654 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,654 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,654 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,654 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,774 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Bw36 from inflight
+2026-04-10 18:03:13,776 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Bw36:
+{'jsonrpc': '2.0', 'id': 'Bw36', 'result': '0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12'}
+Complete: True
+2026-04-10 18:03:13,777 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID ['5HancATtHCWrjpktg7bWiR2Y4D3jMSXBwUNPjGDG7TFwTKTB'] with websocket ID ZU37: {'id': "['5HancATtHCWrjpktg7bWiR2Y4D3jMSXBwUNPjGDG7TFwTKTB']", 'payload': {'jsonrpc': '2.0', 'method': 'state_getStorageAt', 'params': ['0x26aa394eea5630e07c48ae0c9558cef7b99d880ec681799c0cf30e8886371da9fdd298efadbb146bb8a83f08d3ee42a4f41e84e014b97c145a42bff5c4310a29f9c8c405947d7465ea12b0b5aa1fd04f', None]}}
+2026-04-10 18:03:13,777 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,778 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,778 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,778 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:13,896 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped ZU37 from inflight
+2026-04-10 18:03:13,903 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID ZU37:
+{'nonce': 34, 'consumers': 0, 'providers': 1, 'sufficients': 0, 'data': {'free': 4798283365, 'reserved': 0, 'frozen': 0, 'flags': (170141183460469231731687303715884105728,)}}
+Complete: True
+2026-04-10 18:03:13,905 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID chain_getHeader1336 with websocket ID Kl38: {'id': 'chain_getHeader1336', 'payload': {'jsonrpc': '2.0', 'method': 'chain_getHeader', 'params': ['0x9ce7860f084238c70ce7a047fe5e24c619ab76c52aa07e33bf29f5765697ce12']}}
+2026-04-10 18:03:13,905 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:13,905 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:13,905 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:13,905 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:14,024 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped Kl38 from inflight
+2026-04-10 18:03:14,028 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID Kl38:
+{'jsonrpc': '2.0', 'id': 'Kl38', 'result': {'parentHash': '0x1ad0f931fc1bdb9efeafaad3d897a9060047229bbcc3031a3d000d3fbd6c6dc2', 'number': '0x7921c5', 'stateRoot': '0xe54f61878846a631a1182da618a40c700dfb7c5f2b403856b90617f05b9066d5', 'extrinsicsRoot': '0x9f6c1c83d5a2477e252937c95d59f8226392095fbeaa8aad85bbcd50aa921f3a', 'digest': {'logs': ['0x066175726120c416d20800000000', '0x0466726f6e89020121d51bbb47ae8608583f783a369d20dc7f37b1f7cc845bae1c5be1513ccdf8501076bbca3cf3c0ac89c85095d8c8b7a37b1651c8c9b618abeb83e489da8afd1fc87df5af65506f35bc8e1f8c84f9a27d448a1886591b494fa802428891916aafbecf19cce0faa4027b071b4bf27c3303ce54d9024935cae342228b5140905328658e3ba09cb4eb3b78d57a42ca435cf4341444586ad648bdc8b95e7ee000c4f8af', '0x05617572610101ee1c5f279736f7dc142451e6d5bd24e41ef091514bb00fc632c1495a716f662f7b31b6c02abb76591cc4a8dace6aa1384abde6d51555f308237d48ee533b698f']}}}
+Complete: True
+2026-04-10 18:03:14,028 - DEBUG - async_substrate_interface - async_substrate:2769 - Submitted payload ID system_chainType5046 with websocket ID ca39: {'id': 'system_chainType5046', 'payload': {'jsonrpc': '2.0', 'method': 'system_chainType', 'params': []}}
+2026-04-10 18:03:14,028 - DEBUG - async_substrate_interface - async_substrate:1120 - Retrieved item from sending queue
+2026-04-10 18:03:14,029 - DEBUG - async_substrate_interface - async_substrate:1129 - Sent to websocket
+2026-04-10 18:03:14,029 - DEBUG - async_substrate_interface - async_substrate:1118 - _sending, 0
+2026-04-10 18:03:14,029 - DEBUG - async_substrate_interface - async_substrate:770 - Activity detected, resetting timeout
+2026-04-10 18:03:14,147 - DEBUG - async_substrate_interface - async_substrate:1059 - Popped ca39 from inflight
+2026-04-10 18:03:14,151 - DEBUG - async_substrate_interface - async_substrate:2823 - Received response for item ID ca39:
+{'jsonrpc': '2.0', 'id': 'ca39', 'result': 'Live'}
+Complete: True
+2026-04-10 18:03:14,152 - DEBUG - async_substrate_interface - async_substrate:1035 - Shutdown requested
+2026-04-10 18:03:14,152 - DEBUG - async_substrate_interface - async_substrate:780 - Cancelling send/recv tasks
+2026-04-10 18:03:14,152 - DEBUG - async_substrate_interface - async_substrate:794 - Closing websocket connection
